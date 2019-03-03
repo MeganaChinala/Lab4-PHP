@@ -53,14 +53,17 @@
             {
               echo "<td colspan=\"2\"> Free Shipping </td>";
             }
+
+            else if (($_POST["shipping"] == 50))
+            {
+              echo "<td colspan=\"2\">Overnight Shipping</td>";
+            }
+            
             else if($_POST["shipping"] == 5)
             {
               echo "<td colspan=\"2\"> 3 Day Shipping </td>";
             }
-            else 
-            {
-              echo "<td colspan=\"2\">Overnight Shipping</td>";
-            }
+           
             echo "<td>\$".number_format($_POST["shipping"], 2, '.', ',')."</td>";
           echo "</tr>";
         echo "</tbody>";
