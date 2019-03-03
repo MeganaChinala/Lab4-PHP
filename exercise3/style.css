@@ -11,7 +11,12 @@ th
     border: 1px solid black;
     padding: 3px;
 }
-
+.empty
+{
+    background-color:rgb(183, 247, 211);  
+    border: 1px solid black;
+    padding: 3px;
+}
 .form 
 {
     width: 400px;
