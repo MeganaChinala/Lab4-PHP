@@ -1,0 +1,36 @@
+<html>
+
+<head>
+  <title>Web Store</title>
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="formChecker.js" defer></script>
+</head>
+
+<body>
+  <form action="customerBackend.php" method="post" class="form">
+    <h1>Web Store</h1>
+
+    <h2>Login</h2>
+
+    Email: <input type="text" name="email"></input>
+    <br>
+    Password: <input type="password" name="password"></input>
+    <br>
+
+    <h2>Products</h2>
+
+    Sweater: <input type="number" name="product1" min="0" value="0"> ($30)<br>
+    Dress: <input type="number" name="product2" min="0" value="0"> ($15)<br>
+    Romper: <input type="number" name="product3" min="0" value="0"> ($20)<br>
+    <h2>Shipping</h2>
+    <input type="radio" name="shipping" value="0" checked> Free 7 Day Shipping<br>
+    <input type="radio" name="shipping" value="50"> $50 Overnight Shipping<br>
+    <input type="radio" name="shipping" value="5"> $5 3-day Shipping<br>
+
+    <div>
+      <input type="submit">
+      <input type="button" value="Reset" class="reset-button">
+    </div>
+  </form>
+</body>
+</html>
