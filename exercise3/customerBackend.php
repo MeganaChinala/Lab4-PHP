@@ -27,6 +27,7 @@
 
         echo "<thead>";
             echo "<tr>";
+                echo "<th class=\"empty\"></th>";
                 echo "<th>Quantity</th>";
                 echo "<th>Cost Per Product</th>";
                 echo "<th>Sub Total</th>";
