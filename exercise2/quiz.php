@@ -28,10 +28,10 @@
     print "Question ".($i+1).": ".$questions[$i]."<br>";
     print "You answered: ".$_POST["q".($i+1)]."<br>";
     print "Correct answer: ".$answers[$i]."<br>";
-    $score += (($_POST["q".($i+1)] == $answers[$i]) ? 20 : 0);
+    $score += (($_POST["q".($i+1)] == $answers[$i]) ? 1 : 0);
     print "<br>";
   }
-  print "Quiz Score: ".$score."%";
+  print "You got a ".$score. "/5 right. Quiz Score: ".$score."%";
 
 ?>
 </body>
