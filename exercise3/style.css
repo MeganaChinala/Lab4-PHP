@@ -1,0 +1,28 @@
+td
+{
+    background-color: rgb(204, 204, 255);  
+    border: 1px solid black;
+    padding: 3px;
+}
+
+th 
+{
+    background-color:rgb(183, 247, 211);
+    border: 1px solid black;
+    padding: 3px;
+}
+
+.form 
+{
+    width: 400px;
+    margin: auto;
+    margin-top: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+
+table
+{
+    border-collapse: collapse;
+}
