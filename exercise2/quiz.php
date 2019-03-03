@@ -31,7 +31,7 @@
     $score += (($_POST["q".($i+1)] == $answers[$i]) ? 1 : 0);
     print "<br>";
   }
-  print "You got a ".$score. "/5 right. Quiz Score: ".$score."%";
+  print "You got a ".$score. "/5 right. Quiz Score: ".($score*20)."%";
 
 ?>
 </body>
