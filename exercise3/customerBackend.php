@@ -18,7 +18,7 @@
         $price = ["30",
                   "15",
                   "20"
-                ];
+                 ];
 
       echo "Your purchase is complete <br><br>";
       echo "Email entered: ".$_POST["email"]."<br>";
@@ -38,7 +38,7 @@
             for($i = 0; $i < 3; $i++) 
             {
              $subtotal = ($price[$i] * $_POST["product".($i + 1)]);
-             $total = total + subtotal;
+             $total = $total + $subtotal;
              echo "<tr>";
                 echo "<th>".$products[$i]."</th>";
                 echo "<td>".number_format($_POST["product".($i + 1)], 0)."</th>";
@@ -49,7 +49,7 @@
           
         echo "<tr>";
             echo "<th>Shipping</th>";
-            $total = total + $_POST["shipping"];
+            $total = $total + $_POST["shipping"];
             if($_POST["shipping"] == 0) 
             {
               echo "<td colspan=\"2\"> Free Shipping </td>";
